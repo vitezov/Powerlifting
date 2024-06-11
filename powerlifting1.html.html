@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerlifting</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #f100ff;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header' 
+                'left middle middle middle middle right' 
+                'footer footer footer footer footer footer';
+        }
+
+        .left,
+        .middle,
+        .right {
+            padding: 10px;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .middle {
+            grid-area: middle;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container  {
+                grid-template-areas: 
+                    'header header header header header header' 
+                    'left left left left left left' 
+                    'middle middle middle middle middle middle' 
+                    'right right right right right right' 
+                    'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        Powerlifting
+    </div>
+  
+    <div class="left">
+		<div class="link-container">
+			<a href="" target="_blank">Mrtvo dizanje</a>
+			<a href="" target="_blank">Čučanj</a>
+			<a href="" target="_blank">Potisak s klupe</a>
+		</div>
+    </div>
+  
+    <div class="middle">
+        <p>Powerlifting je sport u kojem natjecatelj ima zadatak podići što veću težinu utega u trima disciplinama: čučanj, potisak s klupe i mrtvo dizanje.</p>
+        <img src="https://images.squarespace-cdn.com/content/v1/57902a0cb8a79bc4628fe36e/1489031271572-5AJEJTIVXZDM7W09L5VN/image-asset.jpeg" alt="Deadlift" width="25%">
+		<img src="https://www.castironstrength.com/wp-content/uploads/2017/08/raywilliams.jpg" alt="Čučanj" width="25%">
+		<img src="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/01/Advanced-bench-press-program.jpg?fit=1600%2C1067&ssl=1" alt="Bench press" width="25%">
+    </div>
+  
+    <div class="right">
+        <p>Hrvatski građani bavili su se ovim sportom i u Jugoslaviji te se povijest ovoga sporta može protegnuti sve do 1967. godine od kada je u sklopu Dizačkog saveza Jugoslavije djelovao i odsjek za ovaj sport.
+		Hrvatski powerlifting savez (HPLS) je hrvatska krovna organizacija za powerlifting u Hrvatskoj.[6] Osnovan je 26. lipnja 2012. u Virovitici.</p>
+		<img src="https://www.hpls-powerlifting.hr/wp-content/uploads/2022/02/hpls_footer_logo.png" alt="HPLS" width="50%">
+    </div> 
+  
+    <div class="footer">
+        © 2024 My Grid Layout Page. All rights reserved.
+    </div>
+</div>
+
+</body>
